@@ -9,6 +9,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " light line
     Plug 'itchyny/lightline.vim'
 
+    Plug 'easymotion/vim-easymotion'
     "theme
     "Plug 'vim-airline/vim-airline-themes'
     "theme

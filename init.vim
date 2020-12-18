@@ -8,6 +8,8 @@ set cursorline
 
 source $HOME/.config/nvim/vim-plug/plugins.vim
 "--------------------------MY CONFIGS
+let mapleader = " "
+
 "exit nvim
 nmap qq :q!<CR>
 
@@ -22,12 +24,17 @@ nnoremap <silent> <left> :vertical resize -3<CR>
 "open NERDTree
 map <F2> :NERDTreeToggle<CR>
 
+"gruvbox settings config
 colorscheme gruvbox
 let g:gruvbox_termcolors='256'
 let g:gruvbox_contrast_dark='medium'
 let g:gruvbox_contrast_light='soft'
-
 set background=dark
+
+"easy-motion config
+nmap <leader>nt <Plug>(easymotion-s2)
+let g:EasyMotion_smartcase = 1
+
 
 "--------------------------------------------------------------CONFIGURATION OF COC-CONPLETION
 "source $HOME/.config/nvim/coc.vim
