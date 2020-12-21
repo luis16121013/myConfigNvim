@@ -5,6 +5,9 @@ set number
 set relativenumber
 set cursorline
 
+set splitbelow
+set splitright
+
 
 source $HOME/.config/nvim/vim-plug/plugins.vim
 "--------------------------MY CONFIGS
@@ -21,6 +24,10 @@ noremap <right> <nop>
 nnoremap <silent> <right> :vertical resize +3<CR>
 nnoremap <silent> <left> :vertical resize -3<CR>
 
+"config terminal in nvim
+vnoremap <c-t> :split<CR>:ter<CR>:resize 15<CR>
+nnoremap <c-t> :split<CR>:ter<CR>:resize 15<CR>
+
 "open NERDTree
 map <F2> :NERDTreeToggle<CR>
 
@@ -32,8 +39,13 @@ let g:gruvbox_contrast_light='soft'
 set background=dark
 
 "easy-motion config
-nmap <leader>nt <Plug>(easymotion-s2)
+nmap <leader>m <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
+
+"emmet config
+let g:user_emmet_install_global = 0
+let g:user_emmet_leader_key='<c-z>'
+autocmd FileType html,css,php EmmetInstall
 
 
 "--------------------------------------------------------------CONFIGURATION OF COC-CONPLETION
