@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "theme
     Plug 'morhetz/gruvbox'    
     Plug 'christoomey/vim-tmux-navigator'
+    Plug 'ctrlpvim/ctrlp.vim'
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()

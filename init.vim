@@ -8,7 +8,6 @@ set cursorline
 set splitbelow
 set splitright
 
-
 source $HOME/.config/nvim/vim-plug/plugins.vim
 "--------------------------MY CONFIGS
 let mapleader = " "
@@ -33,10 +32,14 @@ map <F2> :NERDTreeToggle<CR>
 
 "gruvbox settings config
 colorscheme gruvbox
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
+"let g:lightline.colorscheme = 'darcula'
 let g:gruvbox_termcolors='256'
 let g:gruvbox_contrast_dark='medium'
-let g:gruvbox_contrast_light='soft'
-set background=dark
+let g:gruvbox_contrast_light='hard'
+"set background=dark
+set background=light
 
 "easy-motion config
 nmap <leader>m <Plug>(easymotion-s2)
@@ -44,12 +47,10 @@ let g:EasyMotion_smartcase = 1
 
 "emmet config
 let g:user_emmet_install_global = 0
-let g:user_emmet_leader_key='<c-z>'
-autocmd FileType html,css,php EmmetInstall
-
+let g:user_emmet_leader_key='<c-x>'
+autocmd FileType html,css,php,vue EmmetInstall
 
 "--------------------------------------------------------------CONFIGURATION OF COC-CONPLETION
-"source $HOME/.config/nvim/coc.vim
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -58,7 +59,7 @@ set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+set cmdheight=1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
