@@ -16,7 +16,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "theme
     Plug 'morhetz/gruvbox'    
     Plug 'christoomey/vim-tmux-navigator'
-    Plug 'ctrlpvim/ctrlp.vim'
+    "Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'voldikss/vim-floaterm'
+
+    "Files
+    Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
