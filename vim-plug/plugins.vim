@@ -11,12 +11,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'easymotion/vim-easymotion'
     Plug 'mattn/emmet-vim'
+    
     "theme
-    "Plug 'vim-airline/vim-airline-themes'
-    "theme
-    Plug 'morhetz/gruvbox'    
+    Plug 'sainnhe/gruvbox-material'
+    Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'christoomey/vim-tmux-navigator'
-    "Plug 'ctrlpvim/ctrlp.vim'
     Plug 'voldikss/vim-floaterm'
 
     "Files
