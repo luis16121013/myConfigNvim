@@ -13,8 +13,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/emmet-vim'
     
     "theme
-    Plug 'sainnhe/gruvbox-material'
-    Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'rakr/vim-one'
+    "Plug 'sainnhe/gruvbox-material'
+    "Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'voldikss/vim-floaterm'
 
@@ -23,4 +24,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+    "golang
+    Plug 'fatih/vim-go',{ 'do': ':GoUpdateBinaries' }
+    Plug 'vim-scripts/vim-auto-save'
+
 call plug#end()

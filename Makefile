@@ -14,7 +14,7 @@ coc-ai:
 
 #Autocompletion using Lenguage support GOLANG
 coc-go:
-	@nvim +"CocInstall coc-go" +qall
+	@nvim +"CocInstall coc-go"
 
 #Autocompletion using Lenguage support PHP
 coc-php:
