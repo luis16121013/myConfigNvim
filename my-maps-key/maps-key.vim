@@ -15,6 +15,8 @@ nnoremap <leader>fv :tabnew<CR>:e ~/.config/nvim/init.vim<CR>
 nnoremap <leader>fp :tabnew<CR>:e ~/.config/nvim/vim-plug/plugins.vim<CR>
 nnoremap <leader>ff :tabnew<CR>:e ~/.config/nvim/my-maps-key/maps-key.vim<CR>
 nnoremap <leader>fa :tabnew<CR>:e ~/.config/alacritty/alacritty.yml<CR>
+nnoremap <leader>fk :tabnew<CR>:e ~/.config/sxhkd/sxhkdrc<CR>
+nnoremap <leader>fb :tabnew<CR>:e ~/.config/bspwm/bspwmrc<CR>
 
 "----SEARCH AND REPLACE NVIM
 map <leader>cw :%s/<C-r><C-w>//g<Left><Left>
@@ -98,6 +100,9 @@ let g:user_emmet_install_global = 0
 "let g:user_emmet_leader_key='<c-x>'
 let g:user_emmet_leader_key='-'
 autocmd FileType html,css EmmetInstall
+"CONFIGURATION MARKDOWN
+nmap <leader>zx <Plug>MarkdownPreview
+nmap <C-s> <Plug>MarkdownPreviewStop
 
 "----CONFIG LIGHTLINE
 let g:lightline = {}

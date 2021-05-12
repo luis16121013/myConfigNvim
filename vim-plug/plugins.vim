@@ -18,9 +18,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
     "golang
     "Plug 'fatih/vim-go',{ 'do': ':GoUpdateBinaries' }
     "Plug 'vim-scripts/vim-auto-save'
-
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()

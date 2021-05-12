@@ -5,8 +5,10 @@ source $HOME/.config/nvim/my-maps-key/maps-key.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 
 "set terminal transparent
-hi Normal guibg=none ctermbg=NONE
 "hi LineNr ctermfg=red
+
+hi Normal guibg=none ctermbg=NONE
+"set background=light
 
 hi CursorLineNr guifg=#ffffff
 hi CursorLineNr guibg=#4883db

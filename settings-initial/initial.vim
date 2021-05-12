@@ -6,6 +6,7 @@ set shiftwidth=2
 set number
 set relativenumber
 set nobackup
+set nowrap
 "set cursorline
 set noshowmode
 set mouse=a
